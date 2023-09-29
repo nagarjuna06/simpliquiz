@@ -1,0 +1,70 @@
+.leader-board{
+  height: auto;
+}
+.leader-board header{
+    /* border: none; */
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.refresh-btn-container{
+  display: flex;
+  justify-content: flex-end;
+}
+.refresh-btn-container button{
+  border-radius: 5px;
+  border: 0;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 1px grey;
+  padding: 2px 5px;
+  cursor: pointer;
+  display: none;
+  font-weight: 500;
+}
+.leader-board header button{
+  text-align: right;
+}
+.leader-board header p{
+  font-size: 12px;
+  font-weight: 500;
+  color: blue;
+}
+.leader-board-list{
+    overflow: auto;
+}
+
+.leader-board-list table{
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+}
+  
+.leader-board-list table thead{
+    border-bottom: 2px solid grey;
+    position: sticky;
+    top: 0;
+}
+  .leader-board-list th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .focus{
+    background-color: #D6EEEE;
+  }
+  .leader-board-list tr{
+    border-bottom: 1px solid grey;
+  }
+  .leader-board-trophy-image{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .leader-board-trophy-image img{
+    width: 30px;
+  }
+  @media (min-width:560px) {
+    .refresh-btn-container button{
+      display: block;
+    }
+  }

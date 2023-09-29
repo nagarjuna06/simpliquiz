@@ -1,0 +1,53 @@
+.join-form{
+    width: 330px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 10px 20px 10px;
+    border-radius: 10px;
+    height: auto;
+}
+.join-form h3{
+    position: relative;
+    bottom: 20px;
+    color: #3a4ca1;
+
+    text-shadow: 2px 3px 5px grey;
+}
+.join-form input{
+    width: 90%;
+    font-size: 18px;
+    padding: 8px 5px;
+    border: 1.5px solid grey;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    outline: 0;
+}
+.join-form input:focus{
+    border: 2px solid #3a4ca1;
+    box-shadow: 2px 2px 5px grey;
+}
+.block-input{
+    opacity: 0.5;
+    background-color: lightgrey;
+    cursor: not-allowed;
+}
+.join-form img{
+    width: 40%;
+}
+.resend-otp{
+    width: auto;
+    background-color: darkgoldenrod;
+    text-align: center;
+}
+.verify{
+    width: auto;
+    background-color: darkgreen;
+}
+.join-quiz-btn-container{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+}

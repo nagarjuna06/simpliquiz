@@ -1,0 +1,99 @@
+.trophy-image{
+    width: 100%;
+}
+.score-card-change{
+    transition: .3s;
+}
+.score-card-head{
+    text-align: center;
+    text-transform: capitalize;
+}
+.score-card-head>p{
+    font-weight: 500;
+    font-size: 18px;
+
+}
+.trophy-image-container>p{
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    font-size: 9px;
+    bottom: 65px;
+    font-weight: 800;
+
+}
+.score-card-head>h1{
+    color: rgb(19, 52, 238);
+}
+.score{
+    font-size: 32px;
+    font-weight: bold;
+    color: orange;
+}
+
+.total{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.score-container{
+    text-align: center;
+}
+.score-card-btn-container{
+    display: initial;
+}
+.score-btn{
+    width: 180px;
+}
+
+.trophy-image-container:hover{
+    animation: zoom 2s linear infinite;
+    filter: hue-rotate(10deg);
+}
+@keyframes zoom {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 0.9;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@media (min-width:720px) {
+    .score-card-change{
+        width:650px;
+        padding: 20px;
+    }
+    .trophy-image{
+        width: 400px;
+    }
+    .trophy-image-container>p{
+        font-size: 11px;
+        bottom: 80px;
+    }
+    .score{
+        font-size: 60px;
+    }
+    .total{
+        font-size: 35px;
+    }
+    .score-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .score-container>h4{
+        font-size: 20px;
+    }
+    .score-card-btn-container{
+        margin-top: 10px;
+    }
+    .score-btn{
+        width: 200px;
+    }
+    .score-card-main-container{
+        display: flex;
+    }
+}

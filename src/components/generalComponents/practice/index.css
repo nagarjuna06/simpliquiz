@@ -1,0 +1,50 @@
+.practice-form{
+    text-align: center;
+    width: 100%;
+}
+.practice-form input,select{
+    width: 90%;
+    font-size: 16px;
+    padding: 5px;
+    border: 1.5px solid grey;
+    margin-top: 18px;
+    border-radius: 5px;
+    outline: 0;
+    text-transform: capitalize;
+}
+.practice-form select{
+    width: 95%;
+}
+.practice-form button{
+    width: 95%;
+}
+.err-text{
+    color: red;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.practice-loading-container{
+    height: 250px;
+    display: flex;
+    align-items: center;
+
+}
+@media (min-width:560px){
+    .practice-form >input{
+        width: 98%;
+    }
+    .practice-form{
+        width: 95%;
+    }
+    .practice-form button{
+        width: 100%;
+    }
+    .practice-form>div{
+        display: flex;
+        gap: 10px;
+
+    }
+    .practice-loading-container{
+        height: 150px;
+    }
+}

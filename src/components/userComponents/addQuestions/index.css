@@ -1,0 +1,28 @@
+.add-question-btn-container{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+.dashboard-btn{
+    background-color: #3a41ac;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 4px;
+    border-radius: 20px;
+}
+#show-ans{
+    margin-right: 5px;
+}
+.questions-list{
+    list-style: none;
+    width: 95%;
+    height: 500px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+@media (min-width:720px) {
+    .questions-list{
+        width: 98%;
+    }
+}

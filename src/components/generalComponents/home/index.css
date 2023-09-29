@@ -1,0 +1,87 @@
+.home{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+    width: 330px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px;
+    transition: .5s;
+}
+.quiz-image{
+    height: 350px;
+    margin-bottom: 20px;
+
+}
+
+
+.home-buttons{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 1px 1px 8px grey;
+    cursor: pointer;
+    width: 95%;
+    margin-left: 3%;
+    margin-top:20px;
+    padding: 6px;
+    background: linear-gradient(to right,orangered,blueviolet);
+}
+.home-buttons:hover{
+    background: green;
+    transition: 0.2s;
+    border-radius: 0px 10px 0px 10px;
+}
+.home-button-container{
+    display: block;
+}
+
+@media (min-width:560px) {
+    .home{
+        width: 500px;
+        padding: 20px 0px;
+    }
+    .home h3{
+        font-size: 25px;
+    }
+    .quiz-image{
+        height: 400px;
+    }
+    .home-button-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .home-button-container button{
+        width: 200px;
+    }
+}
+@media (min-width:780px){
+    .home{
+        width: 600px;
+        padding: 30px 0px;
+    }
+    .home h3{
+        font-size: 30px;
+    }
+    .quiz-image{
+        height: 450px;
+    }
+    .home-button-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        
+    }
+    .home-button-container button{
+        width: 250px;
+        font-size: 18px;
+    }
+}

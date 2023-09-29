@@ -1,0 +1,82 @@
+.time{
+    display:flex;
+    align-items:center;
+    font-size:16px;
+    font-weight: 500;
+    color:white;
+    background-color: green;
+    border-radius: 16px;
+    padding: 3px 15px;
+    margin: 5px;
+    width: 80px;
+    text-align: center;
+}
+.time-off{
+    background-color: orange;
+}
+.time-less{
+    background-color:red;
+}
+.skip-text{
+    color: #3a41ac;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+@media (min-width:560px){
+    .skip-text{
+        font-size: 16px;
+    }
+}
+
+.alarm-icon{
+    margin-right: 5px;
+}
+
+.circle-icon{
+    padding:0px 12px;
+    animation: .3s fadIn forwards;
+    animation-delay: .3s;
+    scale: 0;
+}
+.text-normal{
+    text-transform: none;
+}
+@keyframes fadIn {
+    to{
+        scale: 1;
+    }
+}
+.count-text{
+    color: #04125b;
+    font-size: 40px;
+    font-weight: bold;
+    scale: 1;
+    margin-top: 20px;
+}
+.count-text-animation{
+    scale: 0;
+    animation:zooming 950ms ease 5;
+}
+.background-image{
+    background-image: url('../../assets/quiz-count-down.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    border-radius: 10px;
+    background-position: center;
+    transition: .5s;
+}
+@media (min-width:1000px) {
+    .count-text{
+        font-size: 70px;
+    }
+}
+@keyframes zooming {
+    to{
+        scale: 1.5;
+    }
+
+}

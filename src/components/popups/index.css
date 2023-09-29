@@ -1,0 +1,208 @@
+.popup-container{
+  text-align: center;
+}
+.popup-container>div{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.confirm-btn{
+  background-color: #3a41ac;
+  width: auto;
+  text-transform: none;
+}
+.logout-button{
+  width: auto;
+  text-transform: none;
+}
+.cancel-btn{
+  background-color: red;
+  width: auto;
+  text-transform: none;
+}
+.quiz-code-form{
+  width: 300px;
+  text-align: center;
+  padding-left: 10px;
+}
+#quiz-code{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#quiz-code::placeholder{
+  text-transform: none;
+  font-weight: normal;
+}
+.quiz-code-form input:focus{
+  border:1.5px solid #3a41ac;
+  box-shadow: 1px 1px 4px grey;
+}
+.quiz-code-form>input{
+  width: 95%;
+    font-size: 18px;
+    padding:5px;
+    border: 1px solid grey;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    outline: 0;
+}
+.quiz-code-form>h2{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.quiz-code-form>div{
+  display: flex;
+  justify-content: space-around;
+}
+.popup-close-icon-container{
+  text-align: right;
+  cursor: pointer;
+}
+.expire-time-container>label{
+  font-size: 14px;
+}
+.expire-time-container>input{
+  font-size: 18px;
+    padding:5px;
+    border: 1px solid grey;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    outline: 0;
+    text-align: center;
+}
+.expire-time-container>span{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.prepare-question-form{
+  width: 300px;
+  padding-left: 10px;
+}
+.prepare-question-form>h2{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.add-question-btn{
+  width: auto;
+  text-transform: none;
+  border: 1px solid grey;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.add-code-btn{
+  background-color: #0066b8;
+  color: #fff;
+  
+}
+.remove-code-btn{
+  background-color: darkred;
+}
+.prepare-question-form{
+  overflow: auto;
+  padding:0px 16px;
+  height: auto;
+  max-height: 500px;
+}
+.prepare-question-form input,textarea{
+    width: 95%;
+    font-size: 18px;
+    padding:5px;
+    margin: 10px 0px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: 0;
+    resize: vertical;
+}
+
+
+
+.instructions-content{
+  padding: 10px 30px;
+  min-width: 250px;
+  height: 550px;
+  overflow-y: scroll;
+}
+.instructions-content::-webkit-scrollbar{
+    width: 5px;
+    background-color: #F5F5F5;
+}
+.instructions-content::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #0ae;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+}
+.instructions-content::-webkit-scrollbar-track{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+.instructions-content>div{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.instructions-content>div>h1{
+  font-size: 18px;
+}
+.instructions-content>div>p{
+  font-size: 13px;
+  font-weight: 500;
+}
+@media (min-width:560px) {
+  .instructions-content{
+    width: 500px;
+  }
+  .instructions-content>div>h1{
+    font-size: 30px;
+  }
+}
+@media (min-width:700px){
+  .prepare-question-form{
+    width: 600px;
+    max-height: 600px;
+  }
+  .prepare-question-form-options-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 20px;
+  }
+  .prepare-question-form-options-container>input{
+    width: 45%;
+  }
+  .instructions-content{
+    width: 650px;
+    height: 600px;
+    
+  }
+  .instructions-content>div>h1{
+    font-size: 36px;
+  }
+  .instructions-content>div>p{
+    font-size: 16px;
+  }
+}
+
+
+@keyframes anvil {
+    0% {
+      transform: scale(1) translateY(0px);
+      opacity: 0;
+      box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    1% {
+      transform: scale(0.96) translateY(10px);
+      opacity: 0;
+      box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    100% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+      box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+    }
+  }
+  .popup-content {
+    -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+  }
+
